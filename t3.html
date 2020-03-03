@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/stylepage.css">
+   <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body >
+<div id="container-fluid main">
+
+	<div class="row">
+		
+		<div class="col-sm-3" style="background-color: #5CDB95;color: #05386B">
+			<!--Setting button-->
+			<a href="#" class="setting" data-toggle="modal" data-target="#myModal"><i class="fas fa-cog" style="font-size: 36px"></i></a>
+			<!--modal -->
+			<div class="modal fade" id="myModal">
+				<div class="modal-dialog modal-lg modal-dialog-centered">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h2>Edit Details</h2>
+							<button class="btn close ml-2 mb-1"  data-dismiss="modal">&times;</button>
+						</div>
+						<div class="modal-body">
+							<form>
+								<div class="row">
+									<div class="form-group m-3">
+										<label for="firstName">First name :<span id="error1" class="text-warning"></span></label>
+										<input type="text" class="form-control" name="lastNme" id="firstName" value="Rohan" />
+									</div>
+									<div class="form-group m-3">
+										<label for="lastName"> Last name :<span id="error2" class="text-warning"></span></label>
+										<input type="text" class="form-control" name="lastNme" id="lastName" />
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="mailId"> E-mail :<span id="error3" class="text-warning"></span></label>
+									<input type="text" class="form-control" name="mail" id="mailId" value="mistryrohan13@gmail.com" />
+								</div>
+								<div class="form-group">
+									<label for="mobNo"> Mobile No :<span id="error4" class="text-warning"></span></label>
+									<input type="number" class="form-control" name="mobile" id="mobNo" value="8369312484" />
+								</div>
+								<div class="row">
+									<div class="form-group m-3">
+										<label for="city"> City :<span id="error5" class="text-warning"></span></label>
+										<input type="text" class="form-control" name="cty" id="city" value="Mumbai" />
+									</div>
+									<div class="form-group m-3">
+										<label for="country"> Country :<span id="error6" class="text-warning"></span></label>
+										<input type="text" class="form-control" name="ctry" id="country" value="India" />
+									</div>
+
+									<div class="form-group m-3">
+										<label for="dateBorn"> DOB :</label><br>
+										<input type="number" class="form-control" name="dte" id="dateBorn" style="display: inline; width: 60px" value="7" />
+										<select  class="form-control" name="mnth" id="month" style="display: inline; width: 120px" >
+											<option>Jan</option>
+											<option>Feb</option>
+											<option>March</option>
+											<option>April</option>
+											<option selected>May</option>
+											<option>June</option>
+											<option>July</option>
+											<option>August</option>
+											<option>September</option>
+											<option>October</option>
+											<option>November</option>
+											<option>December</option>
+										</select>
+										<input type="number" class="form-control" name="yr" maxlength="4" id="year" style="display: inline; width: 80px" value="2001" onKeyPress="if(this.value.length==4) return false;"  />
+									</div>
+								</div>
+							</form>
+							<button class="btn btn-success  m-2 " onclick="changeDetail()" style=" display: block;width: 100%; padding: 15px;text-align: center;">Submit</button>
+						</div>
+						<div class="modal-footer">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+			<!--left side content-->
+			<a href="index.html"><img src="assets/images/my1.jpg" class="img-thumbnail rounded-circle mx-auto d-block" id="dp"></a>
+			<h2 class="text-center m-3 " style="background-color: #f53a18;border: 10px dotted #05386B ">
+				<span id="firstNames">Rohan</span>
+				<span id="lastNames"></span>
+			</h2>
+			<ul>
+					<!--social links-->
+				<li><a href="https://github.com/rohan-mistry" ><i class="fa fa-github" style="font-size: 36px"></i>rohan-mistry</a></li>
+				<li><a href="https://www.linkedin.com/in/rohan-mistry-826714180/" ><i class="fa fa-linkedin-square" style="font-size: 36px"></i>Rohan Mistry</a></li>
+				<li><a href="https://www.instagram.com/rohan_mistry_/" ><i class="fa fa-instagram" style="font-size: 36px"></i>rohan_mistry_</a></li>
+				<li><a href="https://www.facebook.com/rohan.mistry.948" ><i class="fa fa-facebook" style="font-size: 36px"></i>Rohan Mistry</a></li>
+			</ul>
+		</div>
+		<div class="col-sm-9 p-0 " style="background-color: lightgrey">
+			<!--navbar content-->
+			<nav class="navbar navbar-expand-sm bg-light justify-content-end  " id="hideonSmall">
+				 <ul class="navbar-nav	">
+				    <li class="nav-item">
+				      <a class="nav-link" href="index.html" title="Home" data-toggle="tooltip"><i class="fas fa-home" style="font-size: 24px"></i></a>
+				    </li>
+				    <li class="nav-item">
+				      <a class="nav-link" href="t3.html" title="About" data-toggle="tooltip"><i class="fas fa-info-circle" style="font-size: 24px"></i></a>
+				    </li>
+				    <li class="nav-item">
+				      <a class="nav-link" href="t4.html" title="Overview" data-toggle="tooltip"><i class="fas fa-book-reader" style="font-size: 24px"></i></a>
+				    </li>
+				    <li class="nav-item">
+				      <a class="nav-link" href="t5.html" title="Blogs" data-toggle="tooltip"><i class="fas fa-edit" style="font-size: 24px"></i></a>
+				    </li>
+				    <li class="nav-item">
+				      <a class="nav-link" href="t6.html" title="Contact" data-toggle="tooltip"><i class="fas fa-comments" style="font-size: 24px"></i></a>
+				    </li>
+				  </ul>
+			</nav>
+			<!--about content-->
+			<div class="p-5 m-5 rounded-lg shadow-lg" style="background-color: white">
+				<h1>About</h1>
+				<p>
+					I am a second year Computer Engineering student at Dwarkadas J. Sanghvi College of Engineering.I am a newbie in the field of web development.I started Web development in my first year summer vacations and found it quite interesting.
+					I haven't made many cool projects.This website is my second project itself and as you can see it doesn't look much decorative,but you know there is always a scope of improvement.So far I have covered front-end development and would like to explore backend as well.
+				</p>
+				<p>
+					Besides this , I enjoy trekking , hanging out with friends , exploring new places and much more.I am a student volunteer in the NSS(National Service Scheme) section of the college.Helping people in need has always been in my nature.
+				</p>
+				<p>
+					 Feel free to contact me for front end projects and teaming up for hackathons.	
+				</p>
+			</div>
+		</div>
+	</div>
+	<!--sidebar button-->
+	<button class="openbtn" onclick="openNav()">☰ </button>  
+  
+</div>
+<!--sidebar content-->
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="index.html"><i class="fas fa-home"></i>Home</a>
+  <a href="t3.html"><i class="fas fa-info-circle"></i>About</a>
+  <a href="t4.html"><i class="fas fa-book-reader"></i>Education</a>
+  <a href="t5.html"><i class="fas fa-edit"></i>Blogs</a>
+  <a href="t6.html"><i class="fas fa-comments"></i>Contact</a>
+  <a href="https://drive.google.com/open?id=18sKREEjseXY36fLADchcvswk9GwW8aps"><i class="fa fa-file"></i>Resume</a>
+</div>
+
+<script type="text/javascript">
+	//On submit function
+	function changeDetail(){
+
+		error1check('firstName','error1','firstNames');
+		error1check('lastName','error2','lastNames');
+		error1check('city','error5','citys');
+		error1check('country','error6','countrys');
+		passInfo('dateBorn','dateBorns');
+		passInfo('month','months');
+		passInfo('year','years');
+		error4check();
+		error3check();
+		
+	}
+	//mobile no validation
+	function error4check(){
+
+		var no=document.getElementById('mobNo').value;
+		if(no.length !=10 ){
+			document.getElementById('error4').innerHTML="It should be a 10-digit number	";
+			document.getElementById('mobNo').value=null;
+		}
+		else{
+			document.getElementById('error4').innerHTML='';
+			passInfo('mobNo','mobNos');
+		}
+
+	}
+	//mail id validation
+	function error3check(){
+
+		var id=document.getElementById('mailId').value;
+		var a=id.indexOf("@");
+		var b=id.lastIndexOf(".");
+		if(a<1 || (b-a)<2){
+			document.getElementById('error3').innerHTML="Enter a valid email";
+			document.getElementById('mailId').value='';
+		}
+		else{
+			document.getElementById('error3').innerHTML='';
+			passInfo('mailId','mailIds');
+
+		}
+
+	}
+	//name and location validation
+	function error1check(itId,errorName,otId){
+
+		var b=document.getElementById(itId).value;
+		var i,j=0;
+		for(i=0;i<b.length;i++)
+		{
+			if(b.charAt(i) >='a' && b.charAt(i)  <='z' || b.charAt(i) >='A' && b.charAt(i) <='Z' || b.charAt(i)==' ')
+			{
+				j++;
+			}
+			else{
+				document.getElementById(errorName).innerHTML="Not valid";
+				document.getElementById(itId).value='';
+				break;
+
+			}
+
+		}
+		if(j==b.length)
+		{
+			document.getElementById(errorName).innerHTML='';
+			passInfo(itId,otId);
+		}
+
+
+	}
+	//Internal data change function
+	function passInfo(inputId,outputId){
+
+		var x=document.getElementById(inputId);
+		document.getElementById(outputId).innerHTML = x.value;
+		
+	}
+</script>
+  
+  
+
+<script type="text/javascript">
+//open button
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+//close button
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+
+</script>
+<script>
+	//tooltip jquery
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip(); 
+});
+</script>
+</body>
+</html>

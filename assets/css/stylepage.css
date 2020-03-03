@@ -1,0 +1,137 @@
+#dp {
+	height: 200px;
+	width: 200px;
+	margin-top: 50px;
+	border:10px solid #05386B;
+
+}
+.page {
+	position: relative;
+	color: #05386B;
+}
+.top {
+	position: absolute;
+	left: 25%;
+	justify-content: center;
+	top: 10px;
+	font-size: 36px;
+}
+.bottom {
+	position: absolute;
+	left: 20%;
+	bottom: 40px;
+	justify-content: center;
+}
+#homepage a {
+	color: #05386B;	
+}
+ul {
+	list-style-type: none;
+
+}
+.fa {
+	margin:15px;
+	
+}
+li a {
+	color:#05386B;
+	font-weight: bolder; 
+}
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+	top: 10px;
+	left: 10px;
+	position: fixed;
+  font-size: 20px;
+  background-color: grey;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+#workheader {
+	font-size: 24px;
+	font-weight: bold;
+	margin-left: 65px;
+}
+
+.imgcontainer {
+	position: relative;
+	font-family: Courier New;
+	color: white;
+	
+}
+.centertext {
+	position: absolute;
+	top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	font-size: 50px;
+	font-weight: bolder;
+}
+
+#quote {
+	border: 5px dashed #5CDB95;
+}
+@media only screen and (max-width: 768px) {
+    #hideonSmall {
+        display: none;
+    }
+}
+.setting {
+	display: inline;
+	float: right;
+	margin-right: 10px;
+	margin-top: 15px;
+	color: #05386B;
+}
+.change {
+	display: inline;
+}

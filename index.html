@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/stylepage.css">
+   <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body onload="typeWriter(text1,'Top',i);typeWriter(text2,'Bottom1',j);typeWriter(text3,'Bottom2',k)" >
+<div id="container-fluid main">
+
+	<div class="row">
+		<!--left side page-->
+		<div class="col-sm-3 p-0" style="background-color: #5CDB95;color: #05386B">
+			<div style="position: relative">
+        <img src="assets/images/dpw.jpg" style="width: 100%;height: 200px;">
+        <div style=" position: relative;bottom: 100px;">
+           <img src="assets/images/my1.jpg" class="img-thumbnail rounded-circle mx-auto d-block" style="height: 200px;width: 200px">
+        </div>
+        <div style="position: relative;bottom: 60px">
+           <h1 class="text-center " style="border-top: 5px solid #f24d11;border-bottom: 5px solid #f24d11" >Rohan Mistry</h1 >
+        
+          <blockquote class="text-center p-3 m-3 " style="font-style: italic" > <h4 >Things aren't always <div class="border bg-white text-dark">#111111</div> and<div class="border bg-dark text-white">#000000</div></h4></blockquote>
+           <div class="text-center" id="homepage">
+           	<!--social links-->
+          <a href="https://www.linkedin.com/in/rohan-mistry-826714180/"><i class="fa fa-linkedin" style="font-size: 36px"></i></a>
+          <a href="https://github.com/rohan-mistry"><i class="fa fa-github" style="font-size: 36px"></i></a>
+          <a href="https://www.instagram.com/rohan_mistry_/"><i class="fa fa-instagram" style="font-size: 36px"></i></a>
+          <a href="https://www.facebook.com/rohan.mistry.948"><i class="fa fa-facebook" style="font-size: 36px"></i></a>
+        </div>
+        </div>
+      </div>
+		</div>
+		<!--right side page-->
+		<div class="col-sm-9 p-0">
+			<div class="page">
+				<img src="assets/images/eye.gif"  style="height: 680px;width: 100%">
+				<div class="top">
+					<h1  id="Top" ></h1>
+				<h1 id="Bottom1" ></h1>
+				</div>
+				<div class="bottom">
+					<h1 id="Bottom2"></h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<button class="openbtn" onclick="openNav()">☰ </button>  
+  
+</div>
+<!--sidebar content-->
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="index.html"><i class="fas fa-home"></i>Home</a>
+  <a href="t3.html"><i class="fas fa-info-circle"></i>About</a>
+  <a href="t4.html"><i class="fas fa-book-reader"></i>Education</a>
+  <a href="t5.html"><i class="fas fa-edit"></i>Blogs</a>
+  <a href="t6.html"><i class="fas fa-comments"></i>Contact</a>
+  <a href="https://drive.google.com/open?id=18sKREEjseXY36fLADchcvswk9GwW8aps"><i class="fa fa-file"></i>Resume</a>
+  
+</div>
+<script type="text/javascript">
+	var i = 0,j=0,k=0;
+	var text1 = 'Hello,there!';
+	var speed = 100;
+	var text2 = 'My name is Rohan Mistry';
+	var text3 = 'I am a Front End Developer !';
+
+//type function
+function typeWriter(text,id,x) {
+
+  if (x < text.length) {
+    document.getElementById(id).innerHTML += text.charAt(x);
+    x++;
+    setTimeout(typeWriter, speed,text,id,x);
+  }
+}
+//open button
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+//close button
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+</body>
+</html>
