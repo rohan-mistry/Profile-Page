@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Feedback</title>
+	<title>Blogs</title>
 	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -11,9 +11,6 @@
   <link rel="stylesheet" type="text/css" href="assets/css/stylepage.css">
    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
-  <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
-  <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
 </head>
 <body >
 <div id="container-fluid main">
@@ -91,11 +88,11 @@
 			</div>
 			<br>
 			<!--left side content-->
-			<a href="index.html" ><img src="assets/images/my1.jpg" class="img-thumbnail rounded-circle mx-auto d-block" id="dp"></a>
-			<h3 class="text-center m-3 " style="background-color: #f53a18;border: 10px dotted #05386B ">
+			<a href="index.html"><img src="assets/images/my1.jpg" class="img-thumbnail rounded-circle mx-auto d-block" id="dp"></a>
+			<h2 class="text-center m-3 " style="background-color: #f53a18;border: 10px dotted #05386B ">
 				<span id="firstNames">Rohan</span>
 				<span id="lastNames"></span>
-			</h3>
+			</h2>
 			<ul>
 				<!--social links-->
 				<li><a href="https://github.com/rohan-mistry" ><i class="fa fa-github" style="font-size: 36px"></i>rohan-mistry</a></li>
@@ -109,39 +106,32 @@
 			<nav class="navbar navbar-expand-sm bg-light justify-content-end" id="hideonSmall">
 				  <ul class="navbar-nav">
 				    <li class="nav-item">
-				      <a class="nav-link" href="index.html" title="Home" data-toggle="tooltip"><i class="fas fa-home" style="font-size: 24px"></i></a>
-				    </li>
-				    <li class="nav-item">
-				      <a class="nav-link" href="t3.html" title="About" data-toggle="tooltip"><i class="fas fa-info-circle" style="font-size: 24px"></i></a>
-				    </li>
-				    <li class="nav-item">
-				      <a class="nav-link" href="t4.html" title="Overview" data-toggle="tooltip"><i class="fas fa-book-reader" style="font-size: 24px"></i></a>
-				    </li>
-				    <li class="nav-item">
-				      <a class="nav-link" href="t5.html" title="Blogs" data-toggle="tooltip"><i class="fas fa-edit" style="font-size: 24px"></i></a>
-				    </li>
-				    <li class="nav-item">
-				      <a class="nav-link" href="t6.html" title="Contact" data-toggle="tooltip"><i class="fas fa-comments" style="font-size: 24px"></i></a>
-				    </li>
+						<a class="nav-link" href="index.html" title="Home" data-toggle="tooltip"><i class="fas fa-home" style="font-size: 24px"></i></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="about.html" title="About" data-toggle="tooltip"><i class="fas fa-info-circle" style="font-size: 24px"></i></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="overview.html" title="Overview" data-toggle="tooltip"><i class="fas fa-book-reader" style="font-size: 24px"></i></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="blog.html" title="Blogs" data-toggle="tooltip"><i class="fas fa-edit" style="font-size: 24px"></i></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html" title="Contact" data-toggle="tooltip"><i class="fas fa-comments" style="font-size: 24px"></i></a>
+					</li>
 				  </ul>
 			</nav>
-			<div class="m-3 p-3 rounded-lg" style="background-color: white">
-				<h2 class="text-center">I'd love your Feedback!</h2>
-				<div class="m-3">
-					    <i class="fas fa-birthday-cake m-2"></i>
-					    <span id="months" >May</span> <span id="dateBorns" >7</span>,<span id="years" >2001</span><br>				
-						<i class="fas fa-map-marker-alt m-2"></i>
-						<span id="citys" >Mumbai</span>,<span id="countrys" >India</span><br>
-						<i class="fas fa-phone m-2"></i>
-						<span id="mobNos" >8369312484</span><br>
-						<i class="fas fa-envelope m-2"></i>
-						<span id="mailIds" >mistryrohan13@gmail.com</span> 
-						<p class="m-2">
-							Swing by for a cup of <i class="fas fa-coffee"></i>, or leave me a note:
-						</p>
+			<div class="imgcontainer">
+				<img src="assets/images/f2.jpg"  style="height: 680px;width: 100%">
+				<div class="centertext" style="background-color: dodgerblue;opacity: 0.8">
+					<div>Coming Soon</div>
+					<hr style="background-color: white;height: 5px;">
+					<p>35 days Left</p>
+					
 				</div>
-				<div id="formContent" class="m-3 "></div>
 			</div>
+			
 		</div>
 	</div>
 	<!--sidebar button-->
@@ -152,12 +142,16 @@
 <div id="mySidebar" class="sidebar">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
   <a href="index.html"><i class="fas fa-home"></i>Home</a>
-  <a href="t3.html"><i class="fas fa-info-circle"></i>About</a>
-  <a href="t4.html"><i class="fas fa-book-reader"></i>Education</a>
-  <a href="t5.html"><i class="fas fa-edit"></i>Blogs</a>
-  <a href="t6.html"><i class="fas fa-comments"></i>Contact</a>
+  <a href="about.html"><i class="fas fa-info-circle"></i>About</a>
+  <a href="overview.html"><i class="fas fa-book-reader"></i>Education</a>
+  <a href="blog.html"><i class="fas fa-edit"></i>Blogs</a>
+  <a href="contact.html"><i class="fas fa-comments"></i>Contact</a>
   <a href="https://drive.google.com/open?id=18sKREEjseXY36fLADchcvswk9GwW8aps"><i class="fa fa-file"></i>Resume</a>
 </div>
+
+
+  
+
 
 <script type="text/javascript">
 	//On submit function
@@ -237,7 +231,7 @@
 
 		var x=document.getElementById(inputId);
 		document.getElementById(outputId).innerHTML = x.value;
-
+		
 	}
 </script>
 <script>
@@ -246,81 +240,6 @@ $(document).ready(function(){
   $('[data-toggle="tooltip"]').tooltip(); 
 });
 </script>
-<!--React form-->
-  <script type="text/babel">
-  	 class FormInsert extends React.Component {
-  	 constructor(props) {
-  	 	super(props);
-  	 	this.state={errorName:'',errorMail:''};
-  	}
-  	checkName = (event) => {
-  	this.setState({errorName:''});
-  
-  var i,j;
-  let val=event.target.value;
-  for(i=0;i<val.length;i++){
-
-	  if(val.charAt(i) >='a' && val.charAt(i)  <='z' || val.charAt(i) >='A' && val.charAt(i) <='Z' || val.charAt(i)==' '){
-	  j++;
-    }
-	  else{
-
-	  this.setState({errorName:'not valid'});
-
-	}
-	
-}
-  }
-  checkMail = (event) => {
-  		this.setState({errorMail:''});
-  		let val2=event.target.value;
-		var p=val2.indexOf("@");
-		var q=val2.lastIndexOf(".");
-		var g;
-		if(p<1 || (q-p)<2){
-			this.setState({errorMail:'enter valid mail'});
-		}
-		else{
-			g++;
-			
-
-		}
-}
-  	render(){
-  	
-
-  	return (
-  		<div>
-  			<form>
-  				<label for="Name" >Name :<span class="text-warning">{this.state.errorName}</span></label>
-  				<div class="input-group mb-3">
-  					<div class="input-group-prepend " >
-  						<span class="input-group-text"><i class="fas fa-user"></i></span>
-  					</div>
-  					<input type="text" name="Names" id="Name" class="form-control" placeholder="Your name" onChange={this.checkName} />	
-  				</div>
-  				<label for="Email">Email :<span class="text-warning">{this.state.errorMail}</span></label>
-  				<div class="input-group mb-3">
-  					<div class="input-group-prepend " >
-  						<span class="input-group-text"><i class="fas fa-envelope"></i></span>
-  					</div>
-  					<input type="text" name="Emails" id="Email" class="form-control" placeholder=" Your e-mail"  onChange={this.checkMail} />
-  				</div>
-  				<div class="form-group">
-  					<label for="cmnt">Message</label>
-  					<textarea class="form-control"  id="cmnt" rows="5" placeholder="Write something"></textarea>
-  				</div>
-  				
-  			</form>
-  			<button class="btn bg-dark btn-lg text-white" ><i class="fa fa-paper-plane" ></i>Send Message</button>
-  		</div>
-  	)
-  }
-  	}
-  	ReactDOM.render(<FormInsert/>,document.getElementById('formContent'))
-  </script>
- 
-
 <script type="text/javascript">
 //open button
 function openNav() {

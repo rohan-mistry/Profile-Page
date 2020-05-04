@@ -5,6 +5,9 @@
 	border:10px solid #05386B;
 
 }
+body::-webkit-scrollbar {
+	display: none;
+  }
 .page {
 	position: relative;
 	color: #05386B;
